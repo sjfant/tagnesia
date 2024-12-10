@@ -117,8 +117,82 @@
 
 
   
-            <h3 class=" box-content grid grid-cols-4 grid-row-4 max-w-[250px] max-h-[220px] overflow-wrap p-4 border-4 border-purple bg-purple-500 m5 rounded-2xl">
-            </h3>
+            <h2 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-blue-500 rounded-2xl">
+              
+
+
+              <img class=" " src="transportation/car/car.png"></img> 
+   
+              <p class="  text-3xl col-span-2">Mobil</p>
+              <p>
+                <img src="bigspeaker.png" alt="Play Sound 1" class="justify-left items-center gap-1 max-w-10 transition-transform duration-300 transform hover:scale-110" data-sound="ind_car.mp3" id="play_ind_car">
+                <audio id="audio_ind_car" src="transportation/car/ind_car.mp3"></audio>
+              </p>
+              <p class="col-span-2">English: </p>
+              <p>Car</p>
+              <div class="flex items-center justify-left col-span-1">
+                <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="en_car.mp3" id="play_eng_car">
+                <audio id="audio_eng_car" src="transportation/car/eng_car.mp3"></audio>
+              </div>
+             
+              <p class="col-span-2">Chinese:</p> 
+              <p>車 </p>
+              <div class="flex items-center justify-left col-span-1">
+                <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="chi_car.mp3" id="play_chi_car">
+                <audio id="audio_chi_car" src="transportation/car/chi_car.mp3"></audio>
+              </div>
+              <script>
+                const play_ind_car = document.getElementById('play_ind_car');
+                const audio_ind_car = document.getElementById('audio_ind_car');
+        
+                play_ind_car.addEventListener('click', () => {
+                    audio_ind_car.play();
+                });
+        
+                const play_eng_car = document.getElementById('play_eng_car');
+                const audio_eng_car = document.getElementById('audio_eng_car');
+        
+                play_eng_car.addEventListener('click', () => {
+                    audio_eng_car.play();
+                });
+
+                const play_chi_car = document.getElementById('play_chi_car');
+                const audio_chi_car = document.getElementById('audio_chi_car');
+        
+                play_chi_car.addEventListener('click', () => {
+                    audio_chi_car.play();
+                });
+              </script>
+              <p> </p>
+              <button  data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="mx-auto my-auto flex-col col-span-2 p-1 box-content justify-center max-w-[150px] p-1 max-h-[100px] bg-green-500 border-3 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:underline hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-700 " id="menu-button" >See more</button>
+
+              <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                  <div class="relative p-4 w-full max-w-2xl max-h-full">
+                      
+                      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                         
+                          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                              <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
+                                  Car
+                              </h3>
+                              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                  </svg>
+                                  <span class="sr-only">Close modal</span>
+                              </button>
+                          </div>
+
+                          <div class="flex flex-col p-4 md:p-5 space-y-4 items-center justify-center ">
+                              <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                In 1864, the Governor General of the Dutch East Indies, Sloet Van Beele, held a ceremony to build the first railroad connecting the cities of Semarang and Surakarta. The first company to start a railway construction project was the Nederlands-Indische Spoorweden Maatschappij (NISM). Today, the Kereta Api operates extensive routes across Java.
+                              </p>
+                              <img class="" src="transportation/train/ind_train_photo.jpg"></img>
+                          </div>
+                          </div>
+                      </div>
+                  </div>       
+            </h2>
         </div>
       </div>
           
