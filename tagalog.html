@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>My Website</title>
+  <title>Tagalog</title>
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
   <link rel="icon" type="image" href="favicon.png">
 
@@ -24,21 +24,66 @@
               </a>
           </div>
           <div class="flex font-semibold gap-12 text-white mr-20 text">
-              <a class="transform transition duration-300 hover:scale-110 hover:underline" href="/about.html">About</a>
+              <a class="transform transition duration-300 hover:scale-110 hover:underline" href="/wildcard.html">Wildcard</a>
               <a class="transform transition duration-300 hover:scale-110 hover:underline" href="/tagalog.html">Tagalog</a>
               <a class="transform transition duration-300 hover:scale-110 hover:underline" href="/bahasa.html">Bahasa</a>
           </div>
         </div>
 
-        <div class=" flex flex-col my-10 gap-12 h-[80vh] justify-center items-center text-center text-white">
+        <div class=" flex flex-col my-10 gap-12 justify-center items-center text-center text-white">
           <h1 class="text-7xl font-bold hover:text-8xl duration-1000">Tagalog</h1>
           <h3 class="text-4xl ">Pronounciation audio bank</h3>
-          <h4 class="flex-col text-center box-content p-4 border-4 bg-blue-700 m5 rounded-2xl text-4xl">
-              <p>Transportation</p>
-            </h4>
-       
+          <ul class="flex gap-x-10 text-xl">
+            <a href="#transportation"
+               class="text-white-100 bg-purple-400 
+                      rounded-md p-2 outline-none 
+                      outline-offset-0 hover:text-white
+                      hover:bg-purple-700 hover:outline-2
+                      hover:outline-white transition-al
+                      l duration-300">
+              Transportation
+              </a>
+            <a href="#greeting"
+               class="text-white-100 bg-yellow-400
+                      rounded-md p-2 outline-none 
+                      outline-offset-0 hover:text-white
+                      hover:bg-yellow-700 hover:outline-2
+                      hover:outline-white transition-all
+                      duration-300">
+              Greeting
+              </a>
+            <a href="#number"
+               class="text-green-700 bg-green-200 rounded-md
+                      p-2 outline-none outline-offset-0 
+                      hover:text-white hover:bg-green-700
+                      hover:outline-2 hover:outline-white
+                      transition-all duration-300">
+              Number
+              </a>
+              <a href="#location"
+              class="text-white-100 bg-yellow-400 rounded-md
+                     p-2 outline-none outline-offset-0 
+                     hover:text-white hover:bg-yellow-700
+                     hover:outline-2 hover:outline-white
+                     transition-all duration-300">
+             Location
+             </a>
+             <a href="#occupation"
+             class="text-white-100 bg-purple-400  rounded-md
+                    p-2 outline-none outline-offset-0 
+                    hover:text-white hover:bg-purple-700
+                    hover:outline-2 hover:outline-white
+                    transition-all duration-300">
+            Occupation
+            </a>
+          </ul>
 
-          <div class="justify-stretch gap-10 grid grid-cols-2 grid-row-2 items-center text-center text-white ">
+          <h4 id="transportation" class="flex-col text-center box-content p-4 border-4 bg-blue-700 m5 rounded-2xl text-4xl">
+              <p>Transportations</p>
+          </h4>
+          
+
+          <div  class="justify-stretch gap-10 grid grid-cols-2 grid-row-2 items-center text-center text-white ">
             <h1 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-blue-500 rounded-2xl">
               
 
@@ -86,9 +131,9 @@
                 });
               </script>
               <p> </p>
-              <button  data-modal-target="default-modal-tl-car" data-modal-toggle="default-modal-tl-car" type="button" class="mx-auto my-auto flex-col col-span-2 p-1 box-content justify-center max-w-[150px] p-1 max-h-[100px] bg-green-500 border-3 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:underline hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-700 " id="menu-button" >See more</button>
+              <button  data-modal-target="default-modal-car" data-modal-toggle="default-modal" type="button" class="mx-auto my-auto flex-col col-span-2 p-1 box-content justify-center max-w-[150px] p-1 max-h-[100px] bg-green-500 border-3 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:underline hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-700 " id="menu-button" >See more</button>
 
-              <div id="default-modal-tl-car" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div id="default-modal-car" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                   <div class="relative p-4 w-full max-w-2xl max-h-full">
                       
                       <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -97,7 +142,7 @@
                               <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
                                   Trains
                               </h3>
-                              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal-tl-car">
+                              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
                                   <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                                   </svg>
@@ -117,7 +162,6 @@
             </h1>
 
 
-  
             <h2 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-blue-500 rounded-2xl">
               
 
@@ -194,12 +238,36 @@
                       </div>
                   </div>       
             </h2>
-            <h3 class=" box-content grid grid-cols-4 grid-row-4 max-w-[250px] max-h-[220px] overflow-wrap p-4 border-4 border-purple bg-purple-500 m5 rounded-2xl">
-            </h3>
-        </div>
-      </div>
           
-    </body>
-</html>
+            <h3 class=" box-content grid grid-cols-4 grid-row-4 max-w-[250px] max-h-[220px] overflow-wrap p-4 border-4 bg-blue-500 m5 rounded-2xl">
+            </h3>
+          </div>
+        
 
+
+         <h5 id="greeting" class="flex-col text-center box-content p-4 border-4 bg-yellow-500 m5 rounded-2xl text-4xl">
+           <p>Greetings</p>
+         </h5>
+
+
+        <h6 id="number" class="flex-col text-center box-content p-4 border-4 bg-green-600 m5 rounded-2xl text-4xl">
+          <p>Numbers</p>
+        </h6>
+
+
+        <h7 id="location" class="flex-col text-center box-content p-4 border-4 bg-yellow-500 m5 rounded-2xl text-4xl">
+          <p>Locations</p>
+        </h7>
+
+
+       <h8 id="occupation" class="flex-col text-center box-content p-4 border-4 bg-blue-700 m5 rounded-2xl text-4xl">
+         <p>Occupations</p>
+       </h8>
+
+     </div>
+   </div>
+  </div>        
+ </body>
+</head>
+</html>
 
