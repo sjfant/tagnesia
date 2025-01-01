@@ -119,10 +119,10 @@
 
               <img class=" " src="tagalog/transportation/train/train.png"></img> 
    
-              <p class="  text-3xl col-span-2">Kereta</p>
+              <p class="  text-3xl col-span-2">Tren</p>
               <p>
-                <img src="bigspeaker.png" alt="Play Sound 1" class="justify-left items-center gap-1 max-w-10 transition-transform duration-300 transform hover:scale-110" data-sound="ind_train.mp3" id="play_ind_train">
-                <audio id="audio_ind_train" src="tagalog/transportation/train/ind_train.mp3"></audio>
+                <img src="bigspeaker.png" alt="Play Sound 1" class="justify-left items-center gap-1 max-w-10 transition-transform duration-300 transform hover:scale-110" data-sound="tl_train.mp3" id="play_tl_train">
+                <audio id="audio_tl_train" src="tagalog/transportation/train/tl_train.mp3"></audio>
               </p>
               <p class="col-span-2">English: </p>
               <p>Train</p>
@@ -138,11 +138,11 @@
                 <audio id="audio_chi_train" src="bahasa/transportation/train/chi_train.mp3"></audio>
               </div>
               <script>
-                const play_ind_train = document.getElementById('play_ind_train');
-                const audio_ind_train = document.getElementById('audio_ind_train');
+                const play_tl_train = document.getElementById('play_tl_train');
+                const audio_tl_train = document.getElementById('audio_tl_train');
         
-                play_ind_train.addEventListener('click', () => {
-                    audio_ind_train.play();
+                play_tl_train.addEventListener('click', () => {
+                    audio_tl_train.play();
                 });
         
                 const play_eng_train = document.getElementById('play_eng_train');
