@@ -126,6 +126,7 @@
           <h4 class="flex-col text-center box-content p-4 border-4 bg-purple-800 font-bold m5 rounded-2xl text-4xl">
               <p>Transportations</p>
           </h4>
+
           <div id="transportation" class="justify-stretch gap-10 grid grid-cols-2 items-center text-center text-white ">
             <h1 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-purple-500 rounded-2xl">
               
@@ -365,7 +366,7 @@
            <p>Greetings</p>
          </h5>
 
-         <div class="justify-stretch gap-10 grid grid-cols-2 items-center text-center text-white ">
+        <div class="justify-stretch gap-10 grid grid-cols-2 items-center text-center text-white ">
           <h1 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-orange-500 rounded-2xl">
             
 
@@ -835,26 +836,28 @@
               </div>       
         </h3>
 
+        
         <h7 id="location" class="flex-col text-center box-content p-4 border-4 bg-orange-700 font-bold m5 rounded-2xl text-4xl">
           <p>Locations</p>
         </h7>
+
         <div class="justify-stretch gap-10 grid grid-cols-2 items-center text-center text-white ">
           <h1 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-orange-500 rounded-2xl">
             
 
 
-            <img class=" " src="bahasa/location/washroom/washroom.png"></img> 
+            <img class=" " src="bahasa/location/student/student.png"></img> 
  
             <p class="  text-3xl col-span-2">Satu </p>
             <p>
               <img src="bigspeaker.png" alt="Play Sound 1" class="justify-left items-center gap-1 max-w-10 transition-transform duration-300 transform hover:scale-110" data-sound="ind_washroom.mp3" id="play_ind_washroom">
-              <audio id="audio_ind_washroom" src="bahasa/location/washroom/ind_washroom.mp3"></audio>
+              <audio id="audio_ind_student" src="bahasa/location/student/ind_student.mp3"></audio>
             </p>
             <p class="col-span-2">English: </p>
             <p>One</p>
             <div class="flex items-center justify-left col-span-1">
               <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="eng_washroom.mp3" id="play_eng_washroom">
-              <audio id="audio_eng_1" src="bahasa/location/washroom/eng_washroom.mp3"></audio>
+              <audio id="audio_eng_washroom" src="bahasa/location/student/eng_washroom.mp3"></audio>
             </div>
            
             <p class="col-span-2">Chinese:</p> 
@@ -1074,6 +1077,239 @@
          <p>Occupations</p>
        </h8>
 
+       <div class="justify-stretch gap-10 grid grid-cols-2 items-center text-center text-white ">
+        <h1 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-purple-500 rounded-2xl">
+          
+
+
+          <img class=" " src="bahasa/occupation/student/student.png"></img> 
+
+          <p class="  text-3xl col-span-2">Murid </p>
+          <p>
+            <img src="bigspeaker.png" alt="Play Sound 1" class="justify-left items-center gap-1 max-w-10 transition-transform duration-300 transform hover:scale-110" data-sound="ind_student.mp3" id="play_ind_student">
+            <audio id="audio_ind_student" src="bahasa/occupation/student/ind_student.mp3"></audio>
+          </p>
+          <p class="col-span-2">English: </p>
+          <p>Student</p>
+          <div class="flex items-center justify-left col-span-1">
+            <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="eng_student.mp3" id="play_eng_student">
+            <audio id="audio_eng_1" src="bahasa/occupation/student/eng_student.mp3"></audio>
+          </div>
+         
+          <p class="col-span-2">Chinese:</p> 
+          <p>學生 </p>
+          <div class="flex items-center justify-left col-span-1">
+            <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="chi_student.mp3" id="play_chi_student">
+            <audio id="audio_chi_student" src="bahasa/occupation/student/chi_student.mp3"></audio>
+          </div>
+          <script>
+            const play_ind_student = document.getElementById('play_ind_student');
+            const audio_ind_student = document.getElementById('audio_ind_student');
+    
+            play_ind_student.addEventListener('click', () => {
+                audio_ind_student.play();
+            });
+    
+            const play_eng_student = document.getElementById('play_eng_student');
+            const audio_eng_student = document.getElementById('audio_eng_student');
+    
+            play_eng_student.addEventListener('click', () => {
+                audio_eng_student.play();
+            });
+
+            const play_chi_student = document.getElementById('play_chi_student');
+            const audio_chi_student = document.getElementById('audio_chi_student');
+    
+            play_chi_student.addEventListener('click', () => {
+                audio_chi_student.play();
+            });
+          </script>
+          <p> </p>
+          <button  data-modal-target="default-modal-student" data-modal-toggle="default-modal-student" type="button" class="mx-auto my-auto flex-col col-span-2 p-1 box-content justify-center max-w-[150px] p-1 max-h-[100px] bg-green-500 border-3 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:underline hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-700 " id="menu-button" >See more</button>
+
+          <div id="default-modal-student" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-2xl max-h-full">
+                  
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                     
+                      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
+                            Student
+                          </h3>
+                          <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal-student">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                              </svg>
+                              <span class="sr-only">Close modal</span>
+                          </button>
+                      </div>
+
+                      <div class="flex flex-col p-4 md:p-5 space-y-4 items-center justify-center ">
+                          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                            In 1864, the Governor General of the Dutch East Indies, Sloet Van Beele, held a ceremony to build the first railroad connecting the cities of Semarang and Surakarta. The first company to start a railway construction project was the Nederlands-Indische Spoorweden Maatschappij (NISM). Today, the Kereta Api operates extensive routes across Java.
+                          </p>
+                          <img class="" src="bahasa/transportation/train/ind_train_photo.jpg"></img>
+                      </div>
+                      </div>
+                  </div>
+              </div>       
+        </h1>
+
+
+        <h2 class=" box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-purple-500 rounded-2xl">
+          
+
+
+          <img class=" " src="bahasa/occupation/teacher/teacher.png"></img> 
+
+          <p class="  text-3xl col-span-2">Guru </p>
+          <p>
+            <img src="bigspeaker.png" alt="Play Sound 1" class="justify-left items-center gap-1 max-w-10 transition-transform duration-300 transform hover:scale-110" data-sound="ind_teacher.mp3" id="play_ind_teacher">
+            <audio id="audio_ind_teacher" src="bahasa/occupation/teacher/ind_teacher.mp3"></audio>
+          </p>
+          <p class="col-span-2">English: </p>
+          <p>Teacher</p>
+          <div class="flex items-center justify-left col-span-1">
+            <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="eng_teacher.mp3" id="play_eng_teacher">
+            <audio id="audio_eng_teacher" src="bahasa/occupation/teacher/eng_teacher.mp3"></audio>
+          </div>
+         
+          <p class="col-span-2">Chinese:</p> 
+          <p>老師 </p>
+          <div class="flex items-center justify-left col-span-1">
+            <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="chi_teacher.mp3" id="play_chi_teacher">
+            <audio id="audio_chi_teacher" src="bahasa/occupation/teacher/chi_teacher.mp3"></audio>
+          </div>
+          <script>
+            const play_ind_teacher = document.getElementById('play_ind_teacher');
+            const audio_ind_teacher = document.getElementById('audio_ind_teacher');
+    
+            play_ind_teacher.addEventListener('click', () => {
+                audio_ind_teacher.play();
+            });
+    
+            const play_eng_teacher = document.getElementById('play_eng_teacher');
+            const audio_eng_teacher = document.getElementById('audio_eng_teacher');
+    
+            play_eng_teacher.addEventListener('click', () => {
+                audio_eng_teacher.play();
+            });
+
+            const play_chi_teacher = document.getElementById('play_chi_teacher');
+            const audio_chi_teacher = document.getElementById('audio_chi_teacher');
+    
+            play_chi_teacher.addEventListener('click', () => {
+                audio_chi_teacher.play();
+            });
+          </script>
+          <p> </p>
+          <button  data-modal-target="default-modal-teacher" data-modal-toggle="default-modal-teacher" type="button" class="mx-auto my-auto flex-col col-span-2 p-1 box-content justify-center max-w-[150px] p-1 max-h-[100px] bg-green-500 border-3 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:underline hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-700 " id="menu-button" >See more</button>
+
+          <div id="default-modal-teacher" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+              <div class="relative p-4 w-full max-w-2xl max-h-full">
+                  
+                  <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                     
+                      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                          <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
+                            Teacher
+                          </h3>
+                          <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal-teacher">
+                              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                              </svg>
+                              <span class="sr-only">Close modal</span>
+                          </button>
+                      </div>
+
+                      <div class="flex flex-col p-4 md:p-5 space-y-4 items-center justify-center ">
+                          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                            In 1864, the Governor General of the Dutch East Indies, Sloet Van Beele, held a ceremony to build the first railroad connecting the cities of Semarang and Surakarta. The first company to start a railway construction project was the Nederlands-Indische Spoorweden Maatschappij (NISM). Today, the Kereta Api operates extensive routes across Java.
+                          </p>
+                          <img class="" src="bahasa/transportation/train/ind_train_photo.jpg"></img>
+                      </div>
+                      </div>
+                  </div>
+              </div>       
+        </h2>
+       
+       </div>
+       <h3 class="  box-content justify-between grid grid-cols-4 grid-row-4 max-w-[270px] max-h-[240px] overflow-wrap p-4 border-4 bg-purple-500 rounded-2xl">
+
+        <img class=" " src="bahasa/occupation/policeman/policeman.png"></img> 
+
+        <p class="  text-3xl col-span-2">Polisi</p>
+        <p>
+          <img src="bigspeaker.png" alt="Play Sound 1" class="justify-left items-center gap-1 max-w-10 transition-transform duration-300 transform hover:scale-110" data-sound="ind_policeman.mp3" id="play_ind_policeman">
+          <audio id="audio_ind_policeman" src="bahasa/occupation/policeman/ind_policeman.mp3"></audio>
+        </p>
+        <p class="col-span-2">English: </p>
+        <div class="flex items-center justify-left col-span-2 gap-2">
+          <p>Policeman</p>
+          <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="en_thank_you.mp3" id="play_eng_thank_you">
+          <audio id="audio_eng_policeman" src="bahasa/occupation/policeman/eng_policeman.mp3"></audio>
+        </div>
+       
+        <p class="col-span-2">Chinese:</p> 
+        <p>警察 </p>
+        <div class="flex items-center justify-left col-span-1">
+          <img src="speaker.png" alt="Play Sound 1" class="max-w-5 transition-transform duration-300 transform hover:scale-110" data-sound="chi_policeman.mp3" id="play_chi_policeman">
+          <audio id="audio_chi_policeman" src="bahasa/occupation/policeman/chi_policeman.mp3"></audio>
+        </div>
+        <script>
+          const play_ind_policeman = document.getElementById('play_ind_policeman');
+          const audio_ind_policeman = document.getElementById('audio_ind_policeman');
+  
+          play_ind_policeman.addEventListener('click', () => {
+              audio_ind_policeman.play();
+          });
+  
+          const play_eng_policeman = document.getElementById('play_eng_policeman');
+          const audio_eng_policeman = document.getElementById('audio_eng_policeman');
+  
+          play_eng_policeman.addEventListener('click', () => {
+              audio_eng_policeman.play();
+          });
+
+          const play_chi_policeman = document.getElementById('play_chi_policeman');
+          const audio_chi_policeman = document.getElementById('audio_chi_policeman');
+  
+          play_chi_policeman.addEventListener('click', () => {
+              audio_chi_policeman.play();
+          });
+        </script>
+        <p> </p>
+        <button  data-modal-target="default-modal-policeman" data-modal-toggle="default-modal-policeman" type="button" class="mx-auto my-auto flex-col col-span-2 p-1 box-content justify-center max-w-[150px] p-1 max-h-[100px] bg-green-500 border-3 rounded-2xl transition-transform duration-300 transform hover:scale-110 hover:underline hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-700 " id="menu-button" >See more</button>
+
+        <div id="default-modal-policeman" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                   
+                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                        <h3 class="text-3xl font-semibold text-gray-900 dark:text-white">
+                          Policeman
+                        </h3>
+                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal-policeman">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                        </button>
+                    </div>
+
+                    <div class="flex flex-col p-4 md:p-5 space-y-4 items-center justify-center ">
+                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                          In 1864, the Governor General of the Dutch East Indies, Sloet Van Beele, held a ceremony to build the first railroad connecting the cities of Semarang and Surakarta. The first company to start a railway construction project was the Nederlands-Indische Spoorweden Maatschappij (NISM). Today, the Kereta Api operates extensive routes across Java.
+                        </p>
+                        <img class="" src="bahasa/transportation/train/ind_train_photo.jpg"></img>
+                    </div>
+                    </div>
+                </div>
+            </div>       
+       </h3>
+       
+
        <h9 id="landmark" class="flex-col text-center box-content p-4 border-4 bg-green-800 font-bold m5 rounded-2xl text-4xl">
          <p>Landmarks</p>
        </h9>
@@ -1091,7 +1327,7 @@
        </h10>
 
        <h8 id="cloth" class="flex-col text-center box-content p-4 border-4 bg-purple-800 font-bold m5 rounded-2xl text-4xl">
-        <p>CLothes</p>
+        <p>Clothes</p>
        </h8>
 
      </div>
